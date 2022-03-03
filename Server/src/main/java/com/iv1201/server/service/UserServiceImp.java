@@ -60,6 +60,15 @@ public class UserServiceImp implements UserService, UserDetailsService {
     public User saveUser(User user) {
         return repository.save(user);
     }
+    
+    public User updateUser(User user){
+        User existingUser = repository.findByEmail(user.getEmail());
+        if(existingUser != null){
+            existingUser.setUsername(user.getUsername());
+            existingUser.setPassword(user.getPassword());
+        }
+        return repository.save(existingUser);
+    }
 
     
 }

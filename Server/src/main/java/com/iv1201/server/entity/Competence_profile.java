@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -23,7 +24,7 @@ import lombok.NoArgsConstructor;
 public class Competence_profile implements Serializable {
     @Id
     @Column(name="competence_profile_id")
-    @GeneratedValue
+    @GeneratedValue(strategy= GenerationType.IDENTITY, generator="seq-gen")
     private int id;
     private int person_id;
     private int competence_id;
