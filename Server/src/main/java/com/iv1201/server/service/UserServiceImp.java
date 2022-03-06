@@ -10,7 +10,6 @@ import com.iv1201.server.repository.UserRepository;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,22 +17,25 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author theok
  */
-@Service @RequiredArgsConstructor @Transactional 
+@Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRES_NEW)
+@Service @RequiredArgsConstructor
 public class UserServiceImp implements UserService, UserDetailsService {
     @Autowired
     private final UserRepository repository;
     
     public User loadUser(String username)throws UsernameNotFoundException{
-        
        User user = repository.findByUsername(username);
        return user;
     }
-
+    
+  
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = repository.findByUsername(username);
@@ -50,6 +52,12 @@ public class UserServiceImp implements UserService, UserDetailsService {
     public User getUser(String username) {
         return repository.findByUsername(username);
     }
+    
+    @Override
+    public User getUserByEmail(String email) {
+        return repository.findByEmail(email);
+    }
+
 
     @Override
     public List<User> getUsers() {
@@ -69,6 +77,4 @@ public class UserServiceImp implements UserService, UserDetailsService {
         }
         return repository.save(existingUser);
     }
-
-    
 }
