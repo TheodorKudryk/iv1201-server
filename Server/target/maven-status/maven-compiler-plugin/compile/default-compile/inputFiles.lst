@@ -3,7 +3,10 @@ C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\i
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\security\BEncryption.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\UserServiceImp.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\UserService.java
+C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\repository\PasswordResetTokenRepository.java
+C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\PasswordResetService.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\entity\User.java
+C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\security\ValidationHandler.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\entity\Role.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\entity\Availability.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\ServerApplication.java
@@ -11,6 +14,7 @@ C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\i
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\repository\Competence_profileRepository.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\AvailabilityService.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\filter\CustomAutherizationFilter.java
+C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\controller\UpdateInformationController.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\controller\UserController.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\controller\AvailabilityController.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\controller\CompetenceController.java
@@ -22,5 +26,6 @@ C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\i
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\CompetenceService.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\controller\Competence_profileController.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\filter\CustomAuthenticationFilter.java
+C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\entity\Password_reset_token.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\service\Competence_profileService.java
 C:\Users\theok\OneDrive\Dokument\GitHub\iv1201-server\Server\src\main\java\com\iv1201\server\repository\RoleRepository.java

@@ -1,5 +1,6 @@
 com\iv1201\server\entity\Competence.class
 com\iv1201\server\service\UserServiceImp.class
+com\iv1201\server\service\PasswordResetService.class
 com\iv1201\server\controller\CompetenceController.class
 com\iv1201\server\service\UserService.class
 filter\CustomAutherizationFilter.class
@@ -13,12 +14,16 @@ com\iv1201\server\service\Competence_profileService.class
 com\iv1201\server\filter\CustomAuthenticationFilter.class
 com\iv1201\server\repository\CompetenceRepository.class
 com\iv1201\server\repository\Competence_profileRepository.class
+com\iv1201\server\entity\Password_reset_token.class
 com\iv1201\server\entity\User.class
+com\iv1201\server\security\ValidationHandler.class
 com\iv1201\server\security\SecurityConfigurer.class
 com\iv1201\server\entity\Availability.class
 com\iv1201\server\security\BEncryption.class
 com\iv1201\server\entity\Competence_profile.class
+com\iv1201\server\controller\UpdateInformationController.class
 com\iv1201\server\controller\AvailabilityController.class
+com\iv1201\server\repository\PasswordResetTokenRepository.class
 filter\CustomAuthenticationFilter.class
 com\iv1201\server\ServerApplication.class
 com\iv1201\server\service\CompetenceService.class
