@@ -7,12 +7,12 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-@Repository
-@Transactional(propagation = Propagation.MANDATORY)
 /**
  *
  * @author theok
  */
+@Repository
+@Transactional(propagation = Propagation.MANDATORY)
 public interface RoleRepository extends JpaRepository<Role,Integer> {
     Role findByName(String name);
 }
